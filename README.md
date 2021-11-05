@@ -1,68 +1,59 @@
-![IronHack Logo](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_d5c5793015fec3be28a63c4fa3dd4d55.png)
+﻿<img src="https://bit.ly/2VnXWr2" alt="Ironhack Logo" width="100"/>
 
-# Guided Project: Demonstration of Data Cleaning and Manipulation with Pandas
+# Data Cleaning and Manipulation with Pandas to find out where Fonzie jumped the shark
+*[Carlos Romero]*
+
+*[DATA PT SEP 2021, Ironhack Barcelona 2021-10-30]*
+
+## Content
+- [Overview](#overview)
+- [Checklist to start](#checklist-to-start)
+- [Fases](#fases)
+- [Links](#links)
 
 ## Overview
 
-The goal of this project is to combine everything you have learned about data wrangling, cleaning, and manipulation with Pandas so you can see how it all works together. For this project, you will start with this messy data set [Shark Attack](https://www.kaggle.com/teajay/global-shark-attacks/version/1). You will need to import it, use your data wrangling skills to clean it up, prepare it to be analyzed, and then export it as a clean CSV data file.
+The goal of this project was to combine everything I have learned about data wrangling, cleaning, and manipulation with Pandas so I can see how it all works together. For this project, I will start with this messy data set [Shark Attack](https://www.kaggle.com/teajay/global-shark-attacks/version/1). I have to import it, use my data wrangling skills to clean it up, prepare it to be analyzed, and then export it as a clean CSV data file.
 
-**You have the Data Frame in the data folther of this repo**
+## Checklist to start
+• Examinar base de datos
+• Eliminar columnas innecesarias
+• Eliminar valores nulos
+• Arreglar tipos de datos
+• Eliminar fechas y lugares imposibles
+• Substituir valores erroneos por el correcto o, en su caso, poner valor como desconocido
 
-**You will be working individually for this project**, but we'll be guiding you along the process and helping you as you go. Show us what you've got!
+##Fases
 
----
+El notebook se encuentra divido por fases en las que se ha intentado agrupar las diferentes acciones llevadas a cabo para limpiar la base de datos
+- 1  Fase de importación: Aquí se reserva una celda para importar las librerías necesarias y otra para importar el archivo csv.
+- 2  Fase de exploración de columnas u observaciones: Aquí exploramos el dataset y procuramos detectar las columnas con valores innecesarios o conflictivos.
+- 3  Fase limpieza: Aquí agrupamos todas las acciones de transformación de los datos.
+	- 3.1  Eliminar columnas y filas innecesarias o conflictivas: hacemos drop con las columnas detectadas anteriormente.
+	- 3.2  Depurar y eliminar valores nulos de la columna href
+	- 3.3  Substituimos valores nulos por string 'Unknown' en columnas que no usaremos
+	- 3.4  Depurar y eliminar valores nulos de la columna 'Fatal (Y/N)'
+	- 3.5  Depurar y completar los valores de las columnas 'Area', 'Country' y 'Location'
+	- 3.6  Depurar los valores del campo 'Sex '
+	- 3.7  Informar com John/Jane Doe a los nombres que estén vacios pero con sexo determinado
+	- 3.8  Depurar campo 'Activity' y agrupar actividades en un campo adicional
+	- 3.9  Depuramos la columna 'year' a partir de la columna 'Date'
+	- 3.10  Agrupamos los países en una nueva columna llamada 'Territories'
+- 4  Fase final de exportación: Aquí hacemos los último retoques y exportamos el dataset a un archivo csv.
+- 5  Fase de consulta: Where did Fonzie jump de shark??? Aquí vamos filtrando el dataframe haciéndole preguntas hasta que obtenemos el caso buscado.
 
-## Technical Requirements
 
-The technical requirements for this project are as follows:
+## Links
+[Repository]( https://github.com/ironhack-bcn-data-pt/PR02-project-pandas/pull/22)
+[Slides in html](https://drive.google.com/file/d/1Ulhpb53ksjjvWVtfaXYcwjeXQRHaNBfR/view?usp=sharing)
+[Slide in pdf](https://drive.google.com/file/d/1Ygw8E27ZZPEKNguXSGmjhkQEXZPoCWjO/view?usp=sharing)
 
-* The dataset that we provide you is a significantly messy data set. Apply the different cleaning and manipulation techniques you have learned.
-* Import the data using Pandas.
-* Examine the data for potential issues.
-* Use at least 8 of the cleaning and manipulation methods you have learned on the data.
-* Produce a Jupyter Notebook that shows the steps you took and the code you used to clean and transform your data set.
-* Export a clean CSV version of your data using Pandas.
 
-## Necessary Deliverables
 
-The following deliverables should be pushed to your Github repo for this chapter.
 
-* **A cleaned CSV data file** containing the results of your data wrangling work.
-* **A Jupyter Notebook (data-wrangling.ipynb)** containing all Python code and commands used in the importing, cleaning, manipulation, and exporting of your data set.
-* **A ``README.md`` file** containing a detailed explanation of the process followed in the importing, cleaning, manipulation, and exporting of your data as well as your results, obstacles encountered, and lessons learned.
 
-## Suggested Ways to Get Started
 
-* **Examine the data and try to understand what the fields mean** before diving into data cleaning and manipulation methods.
-* **Break the project down into different steps** - use the topics covered in the lessons to form a check list, add anything else you can think of that may be wrong with your data set, and then work through the check list.
-* **Use the tools in your tool kit** - your knowledge of Python, data structures, Pandas, and data wrangling.
-* **Work through the lessons in class** & ask questions when you need to! Think about adding relevant code to your project each night, instead of, you know... _procrastinating_.
-* **Commit early, commit often**, don’t be afraid of doing something incorrectly because you can always roll back to a previous version.
-* **Consult documentation and resources provided** to better understand the tools you are using and how to accomplish what you want.
+	
 
-## Useful Resources
 
-* [Pandas Documentation](https://pandas.pydata.org/pandas-docs/stable/)
-* [Pandas Tutorials](https://pandas.pydata.org/pandas-docs/stable/tutorials.html)
-* [StackOverflow Pandas Questions](https://stackoverflow.com/questions/tagged/pandas)
-* [Awesome Public Data Sets](https://github.com/awesomedata/awesome-public-datasets)
-* [Kaggle Data Sets](https://www.kaggle.com/datasets)
-
-## Project Feedback + Evaluation
-
-* __Technical Requirements__: Did you deliver a project that met all the technical requirements? Given what the class has covered so far, did you build something that was reasonably complex?
-
-* __Creativity__: Did you add a personal spin or creative element into your project submission? Did you incorporate domain knowledge or unique perspective into your analysis.
-
-* __Code Quality__: Did you follow code style guidance and best practices covered in class?
-
-* __Total__: Your instructors will give you a total score on your project between:
-
-    **Score**|**Expectations**
-    -----|-----
-    0|Does not meet expectations
-    1|Meets expectactions, good job!
-    2|Exceeds expectations, you wonderful creature, you!
-
-This will be useful as an overall gauge of whether you met the project goals, but __the more important scores are described in the specs above__, which can help you identify where to focus your efforts for the next project!
 
