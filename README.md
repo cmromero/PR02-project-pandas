@@ -23,7 +23,7 @@ The goal of this project was to combine everything I have learned about data wra
 • Eliminar fechas y lugares imposibles
 • Substituir valores erroneos por el correcto o, en su caso, poner valor como desconocido
 
-##Fases
+## Fases
 
 El notebook se encuentra divido por fases en las que se ha intentado agrupar las diferentes acciones llevadas a cabo para limpiar la base de datos
 - 1  Fase de importación: Aquí se reserva una celda para importar las librerías necesarias y otra para importar el archivo csv.
