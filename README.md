@@ -13,19 +13,19 @@
 
 ## Overview
 
-The goal of this project was to combine everything I have learned about data wrangling, cleaning, and manipulation with Pandas so I can see how it all works together. For this project, I will start with this messy data set [Shark Attack](https://www.kaggle.com/teajay/global-shark-attacks/version/1). I have to import it, use my data wrangling skills to clean it up, prepare it to be analyzed, and then export it as a clean CSV data file.
+El objetivo de este proyecto era combinar todo lo que he aprendido sobre la manipulación, la limpieza y la manipulación de datos con Pandas para poder ver cómo funciona todo en conjunto. Para este proyecto, comenzaré con este desordenado conjunto de datos [Shark Attack](https://www.kaggle.com/teajay/global-shark-attacks/version/1). Tengo que importarlo, usar mis habilidades de manejo de datos para limpiarlo, prepararlo para ser analizado y luego exportarlo como un archivo de datos CSV limpio.
 
 ## Checklist to start
-• Examinar base de datos
-• Eliminar columnas innecesarias
-• Eliminar valores nulos
-• Arreglar tipos de datos
-• Eliminar fechas y lugares imposibles
-• Substituir valores erroneos por el correcto o, en su caso, poner valor como desconocido
+- Examinar base de datos
+- Eliminar columnas innecesarias
+- Eliminar valores nulos
+- Arreglar tipos de datos
+- Eliminar años y lugares imposibles
+- Substituir valores erroneos por el correcto o, en su caso, poner valor como desconocido
 
 ## Fases
 
-El notebook se encuentra divido por fases en las que se ha intentado agrupar las diferentes acciones llevadas a cabo para limpiar la base de datos
+El notebook se encuentra dividido por fases en las que se ha intentado agrupar las diferentes acciones llevadas a cabo para limpiar la base de datos
 - 1  Fase de importación: Aquí se reserva una celda para importar las librerías necesarias y otra para importar el archivo csv.
 - 2  Fase de exploración de columnas u observaciones: Aquí exploramos el dataset y procuramos detectar las columnas con valores innecesarios o conflictivos.
 - 3  Fase limpieza: Aquí agrupamos todas las acciones de transformación de los datos.
